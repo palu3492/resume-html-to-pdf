@@ -1,0 +1,57 @@
+
+body{
+    /*background:black;*/
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+    background: #e0e0e0;
+}
+#container{
+    /*border: red 1px solid;*/
+    /*width: fit-content;*/
+    margin: auto;
+    margin-bottom:30px;
+    width: 8.5in;
+    height: 11in;
+    box-sizing: initial;
+    background:white;
+}
+#print-this{
+    width: 8.5in;
+    max-height: 10.8in;
+    background:white;
+    overflow: auto;
+}
+#info-container{
+    justify-content: space-between;
+    align-items: center;
+}
+#line{
+    border-bottom: solid 1px black;
+}
+.exp{
+    align-items: baseline;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 300;
+}
+h3{
+    font-weight: 300;
+    margin-bottom: 0;
+}
+p{
+    margin: 0;
+    font-size: 0.95rem;
+}
+i{
+    margin-right: 7px;
+    font-size: 1.1rem;
+}
+ul{
+    padding-left: 30px;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+button{
+    margin-top:10px;
+    margin-left:10px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alex Palumbo Resume</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fe457fe4be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button id="print-button">PRINT</button>
+    <div id="container">
+    <div id="print-this">
+        <!--<div style="overflow: auto;">-->
+            <div id="info-container" class="d-flex mx-4 mb-2 mt-2">
+                <h1 class="m-0">Alex Palumbo</h1>
+                <span class="d-flex">
+                    <div>
+                        <p><i class="far fa-envelope"></i>palu3492@stthomas.edu</p>
+                        <p><i class="fab fa-linkedin-in"></i>linkedin.com/alex-palumbo</p>
+                    </div>
+                    <div class="ml-3">
+                        <p><i class="fas fa-phone"></i>651-500-8109</p>
+                        <p><i class="fab fa-github"></i>github.com/palu3492</p>
+                    </div>
+                </span>
+            </div>
+            <div id="line"></div>
+            <div class="mx-4">
+                <div class="d-flex mt-2">
+                    <div class="pr-4">
+                        <h3 class="mb-1">Education</h3>
+                        <div class="d-flex exp">
+                            <h5 class="m-0">University of St. Thomas</h5>
+                        </div>
+                        <p class="">Computer Science (B.S.)</p>
+                        <div class="d-flex" style="font-size: 0.9em;">
+                            <p>Graduating May 2020</p>
+                            <p class="mx-2">•</p>
+                            <p>St. Paul, MN</p>
+                        </div>
+                    </div>
+                    <div class="pl-4" style="border-left:solid 1px">
+                        <h3 class="mb-1">Skills</h3>
+                        <p><b>Languages: </b>Python, Java, C, JavaScript, PHP, SQL, Bash</p>
+                        <p><b>Frameworks: </b>React, Vue, Django, Flask, Express</p>
+                        <p><b>Other: </b>Linux, OpenGL, Google Cloud</p>
+                    </div>
+                </div>
+                <h3 class="mt-2 mb-1">Experience</h3>
+                <div>
+                    <div class="d-flex exp">
+                        <h5 class="m-0">Web Programmer</h5>
+                        <p class="mx-2">|</p>
+                        <p class="">LinkUp, Job Search Engine</p>
+                    </div>
+                    <div class="d-flex exp" style="font-size: 0.9em;">
+                        <p>June 2019 - January 2020</p>
+                        <p class="mx-2">•</p>
+                        <p>Minneapolis, MN</p>
+                    </div>
+                    <ul class="">
+                        <li>Collect, clean and update their databases of job market data.</li>
+                        <li>The services I built using web scraping and APIs are used daily and the company relies on them for gathering data they can sell.</li>
+                        <li>While building these services I created reliable code templates that the current employees use every day</li>
+                        <li>I also researched companies to find new job market data sectors. In addition to my work in data management</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="d-flex exp">
+                        <h5 class="m-0">Full Stack Developer</h5>
+                        <p class="mx-2">|</p>
+                        <p class="">Fitness Formulary</p>
+                    </div>
+                    <div class="d-flex exp" style="font-size: 0.9em;">
+                        <p>June 2018 - September 2018</p>
+                        <p class="mx-2">•</p>
+                        <p>Minneapolis, MN</p>
+                    </div>
+                    <ul class="">
+                        <li>Collect, clean and update their databases of job market data.</li>
+                        <li>I also researched companies to find new job market data sectors. In addition to my work in data management</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="d-flex exp">
+                        <h5 class="m-0">Audio/Video Technician</h5>
+                        <p class="mx-2">|</p>
+                        <p class="">University of St. Thomas</p>
+                    </div>
+                    <div class="d-flex exp" style="font-size: 0.9em;">
+                        <p>October 2016 - May 2017</p>
+                        <p class="mx-2">•</p>
+                        <p>St. Paul, MN</p>
+                    </div>
+                    <ul class="">
+                        <li>Collect, clean and update their databases of job market data.</li>
+                        <li>I also researched companies to find new job market data sectors. In addition to my work in data management</li>
+                    </ul>
+                </div>
+                <h3 class="mb-1">Projects</h3>
+                <div>
+                    <h5 class="m-0">Drawing Game</h5>
+                    <ul class="">
+                        <li>Collect, clean and update their databases of job market data.</li>
+                        <li>I also researched companies to find new job market data sectors. In addition to my work in data management</li>
+                    </ul>
+                </div>
+            <!--</div>-->
+        </div>
+    </div>
+    </div>
+    <script src="print.js"></script>
+    <script>
+        document.getElementById('print-button').addEventListener('click', printAsPdf);
+        function printAsPdf(){
+            // printJS('container', 'html');
+            printJS({
+                printable: 'print-this',
+                type: 'html',
+                showModal: true,
+                targetStyles: ['*']
+            });
+        }
+    </script>
+</body>
+</html>
