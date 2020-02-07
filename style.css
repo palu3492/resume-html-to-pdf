@@ -18,7 +18,7 @@ body{
     width: 8.5in;
     max-height: 10.8in;
     background:white;
-    overflow: auto;
+    overflow: hidden;
 }
 #info-container{
     justify-content: space-between;
@@ -30,6 +30,9 @@ body{
 .exp{
     align-items: baseline;
 }
+.projects-mb{
+    margin-bottom: 0.4em;
+}
 h1{
     font-size: 3rem;
     font-weight: 300;
@@ -40,7 +43,7 @@ h3{
 }
 p{
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.90rem;
 }
 i{
     margin-right: 7px;
@@ -48,7 +51,7 @@ i{
 }
 ul{
     padding-left: 30px;
-    font-size: 0.95rem;
+    font-size: 0.90rem;
     margin-bottom: 0.5rem;
 }
 button{
